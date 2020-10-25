@@ -29,4 +29,3 @@ foreach($res as $dados){
     echo $dados->dtcadastro . '<br>';
     echo '===============================<br>';
 }
-
