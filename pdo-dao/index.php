@@ -7,8 +7,13 @@
  */
 
 require_once ("config.php");
+//testando a classe Sql()
+//$sql = new Sql();
+//$usuarios = $sql->select("select * from tb_usuarios");
+//
+//echo json_encode($usuarios);
 
-$sql = new Sql();
-$usuarios = $sql->select("select * from tb_usuarios");
-
-echo json_encode($usuarios);
+//chamando a classe Usuario()
+$root = new Usuario();
+$root->loadById(13);
+echo $root;
